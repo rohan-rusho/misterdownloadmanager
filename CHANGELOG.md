@@ -288,6 +288,14 @@ Each release's notes on GitHub come from its section here (`## [X.Y.Z]`, see
 - A download started in the browser (a video's download button, a link, a magnet or .torrent) now opens only its dialog when the main window is hidden or minimized, instead of always bringing the full window up.
 
 
+## [0.5.3] - 2026-11-18
+
+Live download progress, like IDM.
+
+### Fixed
+
+- **Download progress now updates live in the main list:** while a download runs, MB/s, % and downloaded bytes update about 10-15 times a second, without moving the mouse. Before, the list only repainted every 250 ms and the shown speed only changed every 0.5 s when idle, so it looked stuck at 1-2 updates a second until the cursor moved over the download card.
+
 ## [0.5.2] - 2026-11-09
 
 A big fixes release: YouTube and video downloads, crashes and freezes, downloads on slow disks, the Mac helper, plus a Safari extension, far more file types and a few new columns and options.
